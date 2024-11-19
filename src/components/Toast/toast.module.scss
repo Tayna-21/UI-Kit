@@ -1,0 +1,72 @@
+@import '../../scss/vars.scss';
+
+.event {  
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 260px;
+	height: 50px;
+	background-color: #cdcdcd;
+	padding: 5px 15px;
+	border-radius: $borderRadius;
+
+	&:hover {
+		cursor: pointer;
+	}
+
+	&:hover > .deleteButton {
+		display: flex;
+		cursor: pointer;
+	}
+
+		.deleteButton {
+			display: none;
+			background: none;
+		}
+}
+
+.toast {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 242px;
+	height: 52px;
+	background-color: $white;
+	border-radius: 8px 8px 0 0;
+	box-shadow: 0 16px 50px 0 rgba(0, 0, 0, .24);
+	padding: 5px 15px;
+	font: 15px Inter;
+	color: $darkDefault;
+	z-index: 20;
+	animation: fade 6000ms linear;
+
+	&:hover {
+		cursor: pointer;
+		animation-play-state: paused;
+	}
+
+		.button {
+			background: none;
+			width: fit-content;
+
+			&:hover {
+				cursor: pointer;
+			}
+		}
+}
+
+@keyframes fade {
+	0% {
+		opacity: 0;
+	}
+	25% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+

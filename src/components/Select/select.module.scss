@@ -1,0 +1,13 @@
+@import '../../scss/vars.scss';
+
+.selectContainer {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	margin-bottom: 150px;
+
+	    label {
+		    font: bold 10px Inter;
+		    color: $darkDefault;
+	    }
+}

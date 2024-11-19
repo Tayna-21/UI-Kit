@@ -1,0 +1,138 @@
+/*borders*/
+.datePickerWrapper {
+  width: 240px;
+  height: 284px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+  padding: 15px 5px;
+}
+.datePickerWrapper .container {
+  width: 224px;
+  margin: 0 auto;
+}
+.datePickerWrapper .container .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+.datePickerWrapper .container .content .month {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.datePickerWrapper .container .content .month p {
+  font: bold 15px Inter;
+  color: #323749;
+}
+.datePickerWrapper .container .content .month .switcher {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
+}
+.datePickerWrapper .container .content .month .switcher button {
+  background: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0;
+}
+.datePickerWrapper .container .content .month .switcher button:hover {
+  cursor: pointer;
+}
+.datePickerWrapper .container .content .month .switcher svg path {
+  stroke: #323749;
+}
+.datePickerWrapper .container .content .dates {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto calc((100% - 168px) / 6) auto calc((100% - 168px) / 6) auto calc((100% - 168px) / 6) auto calc((100% - 168px) / 6) auto calc((100% - 168px) / 6) auto calc((100% - 168px) / 6) auto;
+  grid-template-columns: repeat(7, auto);
+  -ms-grid-rows: 7;
+  grid-template-rows: 7;
+  gap: 10px calc((100% - 168px) / 6);
+}
+.datePickerWrapper .container .content .dates > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+.datePickerWrapper .container .content .dates > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+.datePickerWrapper .container .content .dates > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+}
+.datePickerWrapper .container .content .dates > *:nth-child(4) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 7;
+}
+.datePickerWrapper .container .content .dates > *:nth-child(5) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 9;
+}
+.datePickerWrapper .container .content .dates > *:nth-child(6) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 11;
+}
+.datePickerWrapper .container .content .dates > *:nth-child(7) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 13;
+}
+.datePickerWrapper .container .content .dates p {
+  font: bold 12px/1.2em Inter;
+  color: #323749;
+  text-align: center;
+}
+.datePickerWrapper .container .content .dates .date {
+  width: 24px;
+  height: 24px;
+}
+.datePickerWrapper .container .content .dates .date .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  background: none;
+  border-radius: 8px;
+  padding: 0;
+}
+.datePickerWrapper .container .content .dates .date .button:hover {
+  cursor: pointer;
+  background-color: #f6f6f6;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+  will-change: transform;
+}
+.datePickerWrapper .container .content .dates .date .button .day {
+  font: 12px Inter;
+  color: #323749;
+  opacity: 0.2;
+}
+.datePickerWrapper .container .content .dates .date .button .selected {
+  color: #ffffff;
+}
+.datePickerWrapper .container .content .dates .date .button .dayOfCurrentMonth {
+  opacity: 1;
+}
+.datePickerWrapper .container .content .dates .date .button:has(.selected) {
+  background-color: #00ae1c;
+}

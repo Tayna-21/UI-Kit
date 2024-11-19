@@ -1,0 +1,17 @@
+/*borders*/
+.iconsHolder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+  width: 290px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 15px 20px;
+  background-color: #cdcdcd;
+  border: 1px solid #8d8e91;
+  border-radius: 8px;
+}

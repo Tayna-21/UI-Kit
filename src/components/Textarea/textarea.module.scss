@@ -1,0 +1,22 @@
+@import "../../scss/vars.scss";
+
+.textareaContainer {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	width: 450px;
+
+	    label {
+		    font: bold 10px Inter;
+		    color: $darkDefault;
+	    }
+
+		textarea {
+			border: none;
+			border-bottom: 1px solid $darkDisabled;
+			font: 15px/1.2em Inter;
+			color: $darkDefault;
+			padding: 0 0 20px 0;
+			resize: none;
+		}
+}

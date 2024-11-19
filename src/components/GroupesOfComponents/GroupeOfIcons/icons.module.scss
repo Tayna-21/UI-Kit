@@ -1,0 +1,13 @@
+@import '../../../scss/vars.scss';
+
+.iconsHolder {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	width: 290px;
+	height: fit-content;
+	padding: 15px 20px;
+	background-color: #cdcdcd;
+	border: $grayDisabled;
+	border-radius: $borderRadius;
+}
