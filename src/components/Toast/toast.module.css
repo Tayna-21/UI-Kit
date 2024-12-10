@@ -1,0 +1,98 @@
+/*borders*/
+.event {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 260px;
+  height: 50px;
+  background-color: #cdcdcd;
+  padding: 5px 15px;
+  border-radius: 8px;
+}
+.event:hover {
+  cursor: pointer;
+}
+.event:hover > .deleteButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+.event .deleteButton {
+  display: none;
+  background: none;
+}
+
+.toast {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 242px;
+  height: 52px;
+  background-color: #ffffff;
+  border-radius: 8px 8px 0 0;
+  -webkit-box-shadow: 0 16px 50px 0 rgba(0, 0, 0, 0.24);
+          box-shadow: 0 16px 50px 0 rgba(0, 0, 0, 0.24);
+  padding: 5px 15px;
+  font: 15px Inter;
+  color: #323749;
+  z-index: 20;
+  -webkit-animation: fade 6000ms linear;
+          animation: fade 6000ms linear;
+}
+.toast:hover {
+  cursor: pointer;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+.toast .button {
+  background: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.toast .button:hover {
+  cursor: pointer;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

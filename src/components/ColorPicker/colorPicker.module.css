@@ -1,0 +1,91 @@
+/*borders*/
+.colorPickerWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+  padding: 5px;
+  width: 280px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.colorPickerWrapper h6 {
+  font: bold 10px Inter;
+  color: #323749;
+}
+.colorPickerWrapper .colorPickerContainer {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 15px auto 15px auto 15px auto 15px auto 15px auto 15px auto;
+  grid-template-columns: repeat(7, auto);
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+  gap: 15px;
+  padding: 10px;
+  border: 1px solid #dedfe5;
+  border-radius: 8px;
+}
+.colorPickerWrapper .colorPickerContainer > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+.colorPickerWrapper .colorPickerContainer > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+.colorPickerWrapper .colorPickerContainer > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+}
+.colorPickerWrapper .colorPickerContainer > *:nth-child(4) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 7;
+}
+.colorPickerWrapper .colorPickerContainer > *:nth-child(5) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 9;
+}
+.colorPickerWrapper .colorPickerContainer > *:nth-child(6) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 11;
+}
+.colorPickerWrapper .colorPickerContainer > *:nth-child(7) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 13;
+}
+.colorPickerWrapper input[type=radio] {
+  width: 20px;
+  height: 20px;
+  border-radius: 8px;
+  margin: 0;
+  -webkit-box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.1);
+}
+.colorPickerWrapper input[type=radio]:hover, .colorPickerWrapper .paletteWindow:hover {
+  cursor: pointer;
+}
+.colorPickerWrapper input[type=radio]:checked {
+  outline: 1px solid black;
+  border: 1px solid #ffffff;
+}
+.colorPickerWrapper .paletteWindow {
+  width: 20px;
+  height: 20px;
+  border-radius: 8px;
+  padding: 0;
+}
+.colorPickerWrapper .paletteWrapper {
+  position: absolute;
+  top: 0;
+  right: -225px;
+}
+.colorPickerWrapper input[type=radio], .colorPickerWrapper .paletteWindow {
+  -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.15);
+}

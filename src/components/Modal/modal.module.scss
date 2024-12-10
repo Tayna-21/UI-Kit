@@ -1,0 +1,51 @@
+@import '../../scss/vars.scss';
+
+.modal {
+	position: fixed;
+	bottom: 30px;
+	right: 50px;
+	max-width: 488px;
+    background-color: $white;
+	border-radius: $borderRadius;
+	box-shadow: 0 16px 50px 0 rgba(0, 0, 0, .24);
+	padding: 20px;
+	z-index: 10;
+
+	    .container {
+		    max-width: 450px;
+		    margin: 0 auto;
+
+			    header {
+				    display: flex;
+				    justify-content: space-between;
+				    align-items: start;
+				    gap: 5px;
+				    padding: 0 0 10px 0;
+				    border-bottom: $grayDefault;
+
+					    h3 {
+						    font: bold 24px Inter;
+						    color: $darkDefault;
+							text-transform: capitalize;
+					    }
+
+						button {
+							background: none;
+							padding: 0;
+
+							&:hover {
+								cursor: pointer;
+							}
+						}
+			    }
+
+				main {
+					padding: 15px 0;
+
+					    p {
+						    font: 16px/1.2em Inter;
+						    color: $darkDefault;
+					    }
+				}
+	    }
+}

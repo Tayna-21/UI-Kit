@@ -1,0 +1,59 @@
+@import '../../scss/vars.scss';
+
+.colorPickerWrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	padding: 5px;
+	width: 280px;
+	height: fit-content;
+
+	    h6 {
+		    font: bold 10px Inter;
+		    color: $darkDefault;
+	    }
+
+		.colorPickerContainer {
+			position: relative;
+			display: grid;
+			grid-template-columns: repeat(7, auto);
+			grid-template-rows: auto;
+			gap: 15px;
+			padding: 10px;
+			border: $grayDefault;
+			border-radius: $borderRadius;
+		}
+
+		input[type="radio"] {
+			width: 20px;
+			height: 20px;
+			border-radius: $borderRadius;
+			margin: 0;
+			box-shadow: 0 4px 4px 1px rgba(0, 0, 0, .1);
+		}
+		
+		input[type='radio']:hover, .paletteWindow:hover {
+			cursor: pointer;
+		}
+		
+		input[type="radio"]:checked {
+			outline: 1px solid black;
+			border: 1px solid $white;
+		}
+
+		.paletteWindow {
+			width: 20px;
+			height: 20px;
+			border-radius: $borderRadius;
+			padding: 0;
+		}
+		.paletteWrapper {
+			position: absolute;
+			top: 0;
+			right: -225px;
+		}
+
+		input[type="radio"], .paletteWindow {
+			box-shadow: 0 4px 10px 0 rgba(0, 0, 0, .15);
+		}
+}

@@ -1,0 +1,15 @@
+@import '../../scss/vars.scss';
+
+.selectForm {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	width: fit-content;
+	margin-bottom: 150px;
+
+	    label {
+		    font: bold 10px Inter;
+		    color: $darkDefault;
+			text-transform: capitalize;
+	    }
+}
