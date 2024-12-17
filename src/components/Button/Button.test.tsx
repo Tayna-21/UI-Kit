@@ -3,7 +3,7 @@ import Button from './index.tsx';
 import 'jest-styled-components';
 
     test('component Button should be rendered', () => {
-	    render(<Button primary={false} icon={false} state='default' value="Button" disabled={false} onClick={() => {}} />);
+	    render(<Button variant={'primary'} isIcon={false} value="Button" disabled={false} onClick={() => {}} />);
 	    const button = screen.getByRole('button');
 
 	    expect(button).toBeInTheDocument();
@@ -12,7 +12,7 @@ import 'jest-styled-components';
 	test('after click on Button, function should be executed', () => {
 		const handleClick = jest.fn();
 
-		render(<Button primary={false} icon={false} state='default' value="Button" disabled={false} onClick={handleClick} />);
+		render(<Button variant={'secondary'} isIcon={false} value="Button" disabled={false} onClick={handleClick} />);
 		const button = screen.getByRole('button');
 
 		fireEvent.click(button);
@@ -20,7 +20,7 @@ import 'jest-styled-components';
 	})
 
 	test('Button\'s styles should change when hover', () => {
-		render(<Button primary={false} icon={false} state='hover' value="Button" disabled={false} onClick={() => {}} />);
+		render(<Button variant={'secondary'} isIcon={false} state='hover' value="Button" disabled={false} onClick={() => {}} />);
 		const button = screen.getByRole('button');
 
 		fireEvent.mouseOver(button)
@@ -30,7 +30,7 @@ import 'jest-styled-components';
 	})
 
 	test('Button\'s styles should change after Button was pressed', () => {
-		render(<Button primary={false} icon={false} state='active' value="Button" disabled={false} onClick={() => {}} />);
+		render(<Button variant={'secondary'} isIcon={false} state='active' value="Button" disabled={false} onClick={() => {}} />);
 		const button = screen.getByRole('button');
 
 		fireEvent.mouseDown(button)
@@ -40,7 +40,7 @@ import 'jest-styled-components';
 	})
 
 	test('Button should be disabled', () => {
-		render(<Button primary={false} icon={false} state='active' value="Button" disabled={true} onClick={() => {}} />);
+		render(<Button variant={'secondary'} isIcon={false} state='active' value="Button" disabled={true} onClick={() => {}} />);
 		const button = screen.getByRole('button');
 
         expect(button).toHaveAttribute('disabled')

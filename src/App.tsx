@@ -1,4 +1,3 @@
-import Select from "react-select/dist/declarations/src/Select";
 import { Wrapper } from "./App.styles";
 import GroupeOfButtons from "./components/GroupeOfComponents/GroupeOfButtons";
 import GroupeOfCheckboxes from "./components/GroupeOfComponents/GroupeOfCheckboxes";
